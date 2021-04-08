@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainPane" fx:id="mainPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vquerybuilder.FXMLDocumentController">
+    <children>
+      <AnchorPane id="tableArea" fx:id="tableArea" prefHeight="362.0" prefWidth="935.0" style="-fx-background-color: lightgreen;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="btResetar" fx:id="btResetar" layoutX="843.0" layoutY="7.0" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" text="Resetar" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="7.0" />
+            <Button id="btTestar" fx:id="btTestar" layoutX="843.0" layoutY="44.0" maxHeight="40.0" maxWidth="100.0" mnemonicParsing="false" text="Testar" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="44.0" />
+            <Button id="btCopiar" fx:id="btCopiar" layoutX="841.0" layoutY="83.0" maxHeight="40.0" maxWidth="100.0" mnemonicParsing="false" text="Copiar" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="83.0" />
+            <TitledPane id="bdTablesPane" fx:id="bdTablesPane" animated="false" layoutY="8.0" prefHeight="212.0" prefWidth="160.0" text="aaa">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <HBox id="boxOptions" fx:id="boxOptions" alignment="CENTER" layoutY="267.0" prefHeight="76.0" prefWidth="935.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <VBox id="optBtVbox" fx:id="optBtVbox" alignment="TOP_CENTER">
+                     <children>
+                        <Button id="btGroupBy" fx:id="btGroupBy" mnemonicParsing="false" text="Group by">
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin></Button>
+                        <Button id="btOrderBy" fx:id="btOrderBy" mnemonicParsing="false" text="Order by">
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin></Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="76.0" prefWidth="704.0">
+                     <children>
+                        <HBox id="boxChoiceGroup" fx:id="boxChoiceGroup" />
+                        <HBox id="boxChoiceOrder" fx:id="boxChoiceOrder" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <AnchorPane id="txtArea" fx:id="txtArea" layoutY="165.0" prefHeight="97.0" prefWidth="935.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextArea id="qExit" fx:id="qExit" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
